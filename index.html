@@ -16,8 +16,20 @@
     </section>
 
     <section class="main-content">
-      ddeeffgghh
-<p id="demo">A Paragraph</p>
+      Justin Trudeau promised to legalize cannabis. 
+      Let's see how long it takes him:
+      
+      Achievements:
+      - Accept your seat as prime minister (50xp)
+      
+      Current Goals:
+      - Decriminalization (100xp)
+      
+      Days elapsed since becoming PM: 
+      
+      <p id="demo"># of days</p>
+
+
 <script>
     window.setInterval(function(){
       var _MS_PER_DAY = 1000 * 60 * 60 * 24;
@@ -31,8 +43,8 @@
         return Math.floor((utc2 - utc1) / _MS_PER_DAY);
       }
       
-      var date1 = new Date(1445421503136);
-      var date2 = new Date("2015-11-15");
+      var date1 = new Date("2015-11-19");
+      var date2 = new Date();
       var diffDays = dateDiffInDays(date1,date2);
       document.getElementById("demo").innerHTML = diffDays;
       /// call your function here
