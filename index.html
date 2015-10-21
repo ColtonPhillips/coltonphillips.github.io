@@ -20,8 +20,12 @@
 <p id="demo">A Paragraph</p>
 <script>
     window.setInterval(function(){
-      var d = new Date();
-      document.getElementById("demo").innerHTML = d;
+      
+      var date1 = new Date("15/11/2014");
+      var date2 = new Date();
+      var timeDiff = Math.abs(date2.getTime() - date1.getTime());
+      var diffDays = Math.ceil(timeDiff / (1000 * 3600 * 24)); 
+      document.getElementById("demo").innerHTML = diffDays;
       /// call your function here
     }, 1000);
 </script>
