@@ -20,9 +20,10 @@
 <p id="demo">A Paragraph</p>
 <script>
     window.setInterval(function(){
-      document.getElementById("demo").innerHTML = "Hello JavaScript!";
+      var d = new Date();
+      document.getElementById("demo").innerHTML = d;
       /// call your function here
-    }, 5000);
+    }, 1000);
 </script>
 
       <footer class="site-footer">
